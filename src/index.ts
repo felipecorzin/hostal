@@ -18,7 +18,7 @@ app.use( express.json({ limit: '10mb' }));
 app.use( express.urlencoded({ extended: true, limit: '10mb' }));
 
 // Directorio Público
-app.use(express.static('public'));
+app.use(express.static('dist'));
 
 // Rutas
 import actividadRouter from './routers/actividades';
